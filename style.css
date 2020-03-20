@@ -1,0 +1,302 @@
+* {
+  box-sizing:border-box;
+}
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+
+}
+.container {
+  margin-left:15%;
+  margin-right:15%;
+}
+/* Nav Styles*/
+nav {
+  background: rgb(140, 187, 228);
+  color:white;
+  font-family: sans-serif;
+ 
+}
+ul {
+  margin: 0 40px;
+}
+#nav-menu {
+   
+  display:flex;
+  flex-direction:row;
+  list-style-type:none;
+  text-transform: capitalize;
+  justify-content:flex-end;
+  height:70px;
+  align-items:center;
+}
+.nav-links {
+  margin-left:30px;
+  font-weight:700;
+}
+/*Landing Page */
+#landing-img {
+    opacity:.3;
+    height:600px;
+    position:relative;
+    background-image: url('oil-refinery.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#subtitle-text {
+  width:400px;
+}
+#title-area {
+  background:black;
+  height:600px;
+  position:relative;
+  }
+#title-text {
+  position:absolute;
+  width:600px;
+  bottom:20%;
+  left:15%;
+  color:white;
+  font-family:'Lato',sans-serif;
+  letter-spacing:1px;
+
+}
+
+.title-buttons:hover {
+    background: #8cbbe4;
+    cursor: pointer;
+    color: white;
+    border: 3px solid wheat;
+}
+h1 {
+      font-size: 60px;
+    color: white;
+}
+h3 {
+
+    font-size: 25px;
+}
+#connect-btn {
+  margin-left:20px;
+}
+.title-buttons {
+  background-color: transparent;
+    border: 3px solid #8cbbe4;
+    width: fit-content;
+    padding: 10px;
+    color: wheat;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+#logo { 
+ margin-right:auto;
+}
+.logo-img {
+  width:300px;
+}
+
+/*intro section*/
+.section-title{
+  margin-top:50px;
+  font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5190c8;
+}
+.landing-paragraph {
+  text-align:center;
+  font-size:20px;
+  line-height:1.5;
+  font-family:'Lato', sans-serif;
+  margin-bottom:50px;
+}
+#meet-team-btn{
+width:300px;
+background:transparent;
+padding:10px;
+color:#5190c8;
+border:1px solid #5190c8;
+display:block; 
+margin:0 auto;
+border-radius:10px;
+font-size:20px;
+}
+
+/*Specializations*/
+
+#specializations {
+  background:#5190c8;
+  color:white;
+  margin-top:10%;
+  padding:4em 0 2em;
+  height:750px;
+  border-top-left-radius: 40px;
+  transform:skewY(-2deg);
+}
+#specializations:before {
+  content:"";
+  width:40px;
+  height:40px;
+  background:#5190c8;
+  position:absolute;
+  top: -39px;
+    right:0;
+    z-index:-2;
+
+}
+
+#specializations:after {
+  content:"";
+  width:80px;
+  height:80px;
+  background:white;
+  position:absolute;
+  right: 0; 
+  border-radius:50%;
+  top:-80px;
+  z-index:-1;
+
+}
+#specialize-title{
+  transform:skewY(2deg);
+}
+#specialize-title {
+  color:white;
+}
+.specialize-card {
+  width: 350px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    height: 400px;
+    margin-top: 80px;
+    color: black;
+    padding:40px 10px 20px;
+     font-family:'Lato', sans-serif;
+     position:relative;
+}
+#cards-container {
+    transform: skewY(2deg);
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding-left: 15%;
+    background: #5190c8;
+    padding-right: 15%;
+
+    z-index: 24;
+}
+#capabilities {
+    height: 773px;
+    background: #fff;
+    padding-top: -10px;
+    position: relative;
+    border-top-left-radius: 30px
+    }
+.card-icon{
+  width:50px;
+ fill:none;
+ stroke:#8cbbe4;
+ stroke-linejoin:round;
+ stroke-width:2px
+}
+.training-icon {
+  fill:#8cbbe4;
+    width:50px;
+ stroke:#8cbbe4;
+ stroke-linejoin:round;
+
+}
+.specialize-list {
+ padding-left:0;
+ margin:0;
+ list-style-type:none;
+ font-size:18px;
+}
+.specialize-title {
+ 
+  text-transform:uppercase;
+  font-size:22px;
+}
+.specialize-list-item {
+  border-bottom:1px solid #8cbbe4;
+  padding:7px;
+}
+.view-details {
+ color: #5190c8;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+}
+.detail-arrow {
+  padding-left:20px;
+}  
+
+/*footer*/
+footer {
+    background: #1c1e1f;
+    height: 250px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding:0 15%;
+    padding-top:20px;
+     position:relative;
+}
+.footer-title {
+
+     font-weight: 400;
+    margin: 0px;
+    font-size: 22px;
+    margin-bottom:15px;
+    padding-top: 20px;
+}
+.contact-methods {
+  margin:0; 
+  padding-left:0;
+  list-style-type: none;
+}
+#contact-container {
+  width:300px;
+  border-right:1px solid white;
+  height:fit-content;
+}
+footer:before {
+ width:100%;
+  height:40px;
+  background:#5190c8;
+  position:absolute;
+  top: -39px;
+    right:0;
+    z-index:-2;
+content:"";
+}
+#phone-icon {
+  transform:scale(-1,1);
+}
+.footer-list-item {
+  padding:10px 0;
+}
+#hours {
+   width:300px;
+   display:inline-block;
+   margin-left:45px;
+}
+#hours-and-contact {
+  display:flex;
+  margin-top:20px;
+}
+#AO-design {    
+    width: fit-content;
+    position: relative;
+    bottom: 0;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+#initials {
+  color:gold;
+}
