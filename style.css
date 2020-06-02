@@ -302,18 +302,61 @@ content:"";
 }
 
 @media screen and (max-width:1175px) {
-  .specialize-list {
+  #intro {
+    margin-bottom:100px;
+  }
+.specialize-card {
+  height:500px;
+  width:200px;
+}
+ #cards-container {
+   padding:10px;
+ }
+  #specializations {
+    padding-top:10px;
+  
+  }
+  #AO-design {
     display:none;
   }
-  .specialize-card {
+  
+  .contact-method {
+    margin-right:20px;
+  }
+  footer {
     height:fit-content;
+  }
+}
+
+@media screen and (max-width:600px) {
+footer {
+ 
+  padding:5px;
+}
+   #cards-container {
+    flex-direction:column;
+  }
+ 
+   .specialize-card {
+    height:fit-content;
+    /* padding:10px 0 0 0; */
     width:100%;
     margin-top:10px;
   }
-  #cards-container {
+  
+  .specialize-list {
+    display:none;
+  }
+  #hours-and-contact {
+ 
     flex-direction:column;
+    font-size:16px;
   }
-  #specializations {
-    padding-top:10px;
+  #title-text, #subtitle-text {
+    width:100%;
+    left:0;
+    padding-left:10px;
+   
   }
+  
 }
