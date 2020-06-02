@@ -300,3 +300,20 @@ content:"";
 #initials {
   color:gold;
 }
+
+@media screen and (max-width:1175px) {
+  .specialize-list {
+    display:none;
+  }
+  .specialize-card {
+    height:fit-content;
+    width:100%;
+    margin-top:10px;
+  }
+  #cards-container {
+    flex-direction:column;
+  }
+  #specializations {
+    padding-top:10px;
+  }
+}
