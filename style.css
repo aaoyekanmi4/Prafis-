@@ -340,24 +340,41 @@ content:"";
   #bar-menu {
     font-size:22px;
     display:block;
-    position:relative;
+    position:absolute;
+    color:white;
+
+    
     cursor:pointer;
+    right:20x;
+    top:2px;
+    
     
   }
   #hidden-nav-menu {
-    font-size:22px;
+       font-size: 16px;
+    color: #8cbbe4;
+    background: white;
+    border: 1px solid #8cbbe4;
+   top:72px;
+    list-style-type: none;
+    z-index: 2;
+    margin:0;
+    width: 150px;
+    display: block;
+    position: absolute;
+    padding:10px;
+    right:5px;
+    
+  
+  }
+  .dropdown-nav {
+    border-bottom: 1px solid #8cbbe4;
+    padding: 5px 0;
+  }
+  .dropdown-nav:hover {
+    cursor:pointer;
+    background:#5190c8;
     color:white;
-    background:skyblue;
-    border-bottom:white;
-    font-size:22px;
-    z-index:2;
-    width:300px;
-    position:absolute;
-    left:300px;
-    
-    
-    
-
   }
    .nav-links {
     display:none;
