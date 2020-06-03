@@ -16,10 +16,14 @@ nav {
   background: rgb(140, 187, 228);
   color:white;
   font-family: sans-serif;
+   height:70px;
  
 }
 ul {
   margin: 0 40px;
+}
+#bar-menu {
+  display:none;
 }
 #nav-menu {
    
@@ -28,12 +32,14 @@ ul {
   list-style-type:none;
   text-transform: capitalize;
   justify-content:flex-end;
-  height:70px;
+ 
   align-items:center;
 }
 .nav-links {
   margin-left:30px;
   font-weight:700;
+  height: 41px;
+  margin-top: 30px;
 }
 /*Landing Page */
 #landing-img {
@@ -91,11 +97,12 @@ h3 {
     text-transform: uppercase;
     border-radius: 10px;
 }
-#logo { 
- margin-right:auto;
-}
+
 .logo-img {
-  width:300px;
+     width: 300px;
+    margin-top: 10px;
+    margin-left:10px;
+    float: left;
 }
 
 /*intro section*/
@@ -247,6 +254,9 @@ footer {
     padding-top:20px;
      position:relative;
 }
+#footer-logo {
+  width:300px;
+}
 .footer-title {
 
      font-weight: 400;
@@ -305,10 +315,8 @@ content:"";
   #intro {
     margin-bottom:100px;
   }
-.specialize-card {
-  height:500px;
-  width:200px;
-}
+ 
+
  #cards-container {
    padding:10px;
  }
@@ -328,7 +336,38 @@ content:"";
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:940px) {
+  #bar-menu {
+    font-size:22px;
+    display:block;
+    position:relative;
+    cursor:pointer;
+    
+  }
+  #hidden-nav-menu {
+    font-size:22px;
+    color:white;
+    background:skyblue;
+    border-bottom:white;
+    font-size:22px;
+    z-index:2;
+    width:300px;
+    position:absolute;
+    left:300px;
+    
+    
+    
+
+  }
+   .nav-links {
+    display:none;
+  }
+  .specialize-card {
+  height:500px;
+  width:225px;
+}
+}
+@media screen and (max-width:740px) {
 footer {
  
   padding:5px;
@@ -339,7 +378,6 @@ footer {
  
    .specialize-card {
     height:fit-content;
-    /* padding:10px 0 0 0; */
     width:100%;
     margin-top:10px;
   }
